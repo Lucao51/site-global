@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="siteGlobal.html">voltar</a></li>
+                <img src="volta.png" width="80" height="80">
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <center><h1>CLIMA_BRAZUCA</h1></center>
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <Fieldset>
+                    <legend>Formulário de Contato</legend>
+            
+                    <form action="processar_formulario.php" method="post">
+                        <!-- Atributos "action" e "method" definem o URL para processar o formulário e o método HTTP -->
+            
+                        <div style="display: flex; flex-direction: column;">
+                            <div>
+                                <label for="nome">Nome:</label>
+                                <!-- A tag "label" é usada para rotular um campo de entrada -->
+                                <input type="text" id="nome" name="nome" required>
+                                <!-- A tag "input" cria um campo de entrada de texto -->
+                                <!-- O atributo "type" define o tipo de entrada (texto no caso) -->
+                                <!-- Os atributos "id" e "name" são usados para identificar o campo -->
+                                <!-- O atributo "required" torna o campo obrigatório -->
+                            </div>
+            
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                                <!-- O tipo "email" valida automaticamente o formato de email -->
+                            </div>
+            
+                            <div>
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="20" style="width: 800px" required></textarea>
+                                <!-- A tag "textarea" cria um campo de texto multilinha -->
+                                <!-- O atributo "rows" define o número de linhas visíveis -->
+                            </div>
+                        </div>
+            
+                        <input type="submit" value="Enviar">
+                        <!-- A tag "input" com "type" definido como "submit" cria um botão de envio -->
+            
+                    </form>
+                </Fieldset>
+            </div>
+    
+            <div class="footer">
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
